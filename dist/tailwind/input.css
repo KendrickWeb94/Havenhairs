@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .smooth {
+    @apply transition-all delay-500 duration-500 ease-in-out;
+  }
+  .btn-primary {
+    @apply bg-primary cursor-pointer hover:bg-primary/55 rounded-md w-fit flex items-center gap-4 smooth text-sm;
+  }
+  .btn-transparent {
+    @apply bg-transparent cursor-pointer hover:gap-7 rounded-md w-fit flex items-center gap-4 smooth text-sm;
+  }
+  .btn-outline-white {
+    @apply bg-transparent border px-5 p-2 border-white  cursor-pointer hover:outline-none hover:bg-white text-white hover:text-primary rounded-sm w-fit flex items-center gap-4 smooth text-sm;
+  }
+  .btn-outline-dark {
+    @apply bg-transparent border px-5 p-2 border-primary  cursor-pointer hover:outline-none hover:bg-primary text-primary hover:text-white rounded-sm w-fit flex items-center gap-4 smooth text-sm;
+  }
+}

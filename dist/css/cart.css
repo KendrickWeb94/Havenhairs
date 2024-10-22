@@ -1,0 +1,307 @@
+.watch-me {
+  width: 180px;
+}
+
+.logo-2 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #7e22ce;
+}
+
+.col {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.shop {
+  margin-top: 3rem;
+}
+
+.shop-content h2 {
+  font-size: 19px;
+}
+
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+}
+
+.product-box {
+  position: relative;
+  width: 100%;
+}
+
+.product-img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.product-box:hover {
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  transition: 0.4s;
+}
+
+.product-title {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-family: 500;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background: #7e22ce;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background: hsl(249, 32%, 17%);
+  color: #fff;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  right: -1000%;
+  width: 320px;
+  z-index: 99999999;
+  overflow-x: hidden;
+  height: 100vh;
+  padding: 20px;
+  background: white;
+  box-shadow: hsl(0 4% 15% / 10%);
+  transition: 0.3s;
+  border: 1.2px solid #777;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cart-product-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.cart-price {
+  font-weight: 500;
+}
+
+.cart-quantity {
+  border: 1px solid var(--text-color);
+  outline-color: var(--main-color);
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove {
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--text-color);
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background: var(--text-color);
+}
+
+#close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.cart.active {
+  right: 0;
+}
+
+.main-animation {
+  height: auto;
+  background-color: #38a169;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.trigger {
+  font-family: "Dancing Script";
+}
+.silent {
+  font-family: "REM";
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+  /* Adjust font sizes and spacing for smaller screens */
+
+  /* Reduce font size for section titles */
+  .section-title {
+    font-size: 1rem;
+  }
+
+  /* Increase the size of product images */
+  .product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+  }
+
+  /* Adjust padding and margin for product boxes */
+  .product-box {
+    padding: 5px;
+    margin-bottom: 1rem;
+  }
+
+  /* Reduce font size for product titles */
+  .product-title {
+    font-size: 0.9rem;
+  }
+
+  /* Reduce font size for prices */
+  .price {
+    font-size: 0.9rem;
+  }
+
+  /* Increase font size for the cart button */
+  .add-to-cart {
+    font-size: 0.8rem;
+  }
+
+  /* Additional responsive styles for screens up to 768px */
+  /* Add more responsive styles here as needed */
+}
+
+/* Responsive styles for screens up to 480px */
+@media (max-width: 480px) {
+  /* Place additional responsive styles for smaller screens here */
+  .nav {
+    height: auto;
+    display: block;
+  }
+
+  /* Further reduce font sizes and spacing for very small screens */
+  .link_back {
+    font-size: 1rem;
+  }
+  /* Reduce font size for section titles */
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  /* Reduce font size for product titles */
+  .product-title {
+    font-size: 0.8rem;
+  }
+
+  /* Reduce font size for prices */
+  .price {
+    font-size: 0.8rem;
+  }
+
+  /* Decrease padding and margin for product boxes */
+  .product-box {
+    padding: 3px;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Decrease font size for the cart button */
+  .add-to-cart {
+    font-size: 0.7rem;
+  }
+
+  /* Reduce font size for the cart title */
+  .cart-title {
+    font-size: 1.2rem;
+  }
+
+  /* Decrease font size for the cart product titles */
+  .cart-product-title {
+    font-size: 0.8rem;
+  }
+
+  /* Reduce font size for the cart price */
+  .cart-price {
+    font-size: 0.8rem;
+  }
+
+  /* Reduce font size for the cart quantity input */
+  .cart-quantity {
+    font-size: 0.7rem;
+  }
+
+  /* Decrease font size for the "Buy" button */
+  .btn-buy {
+    font-size: 0.8rem;
+  }
+
+  /* Additional responsive styles for screens up to 480px */
+  /* Add more responsive styles here as needed */
+}
