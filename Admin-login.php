@@ -87,7 +87,7 @@ if (isset($_POST['admin_submit'])) { // Change to match the button name in the f
                         </div>
                     </form>
                 </div>
-                <button class="flex w-full items-center gap-2 text-primary text-center">
+                <button class="flex opacity-0 w-full items-center gap-2 text-primary text-center">
                     <p>Don’t have an account? </p><a href="Admin-signup.php" class="underline underline-offset-8">Sign up here</a>
                 </button>
             </div>

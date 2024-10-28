@@ -37,6 +37,10 @@ blockquote:before, blockquote:after, q:before, q:after {
   content: none;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 input {
   -webkit-appearance: none;
@@ -129,6 +133,10 @@ input {
 .font_el {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
+}
+
+.dashboard-bg {
+  background-color: rgba(126, 34, 206, 0.15);
 }
 
 .navbar-active {
@@ -468,7 +476,7 @@ input {
 .product-wrapper {
   width: 180px;
   position: relative;
-  height: 350px;
+  height: 315px;
   overflow: hidden;
   background: white;
   border-radius: 10px;
@@ -516,7 +524,7 @@ i {
 .product-wrapper-2 {
   width: auto;
   position: relative;
-  height: 350px;
+  height: 315px;
   overflow: hidden;
   background: white;
   border-radius: 10px;

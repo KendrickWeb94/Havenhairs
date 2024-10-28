@@ -73,7 +73,7 @@
                 <p class="bg-white  p-1 rounded-3xl w-fit text-xs px-3 text-primary text-pretty">Promo Codes Coming Soon
                 </p>
                 <br>
-                <a href="./pages/Categories.php">
+                <a href="./Categories.php">
                     <button class=" btn-outline-white">GET SHOPPING</button>
                 </a>
             </div>
@@ -147,7 +147,7 @@
                         always want by listening to what they to say and doing our best to deliver, you can easily talk
                         to us through our contact forum</p>
                     <br>
-                    <a href="./pages/Contact.php" class=" underline underline-offset-8 uppercase font_m">Try Our
+                    <a href="./Contact.php" class=" underline underline-offset-8 uppercase font_m">Try Our
                         forum</a>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                     <p class="text-sm text-gray-500">These are Hairs that were requested by previous customers and we
                         surely didnt dissapoint</p>
 
-                    <a href="./pages/Categories.php" class="btn-primary">Request Yours now</a>
+                    <a href="./Categories.php" class="btn-primary">Request Yours now</a>
                 </div>
             </div>
 
@@ -179,7 +179,7 @@
 
                             <img src="./assets/imgs/products/product-1.jpg" alt="">
                             <div class="space-y-1 p-3">
-                                <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                
                                 <p class=" text-sm text-gray-400">Size 5</p>
                                 <strong class=" text-sm">Negotiatable Price</strong>
                                 <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -197,7 +197,7 @@
                             </div>
                             <img src="./assets/imgs/products/product-2.jpg" alt="">
                             <div class="space-y-1 p-3">
-                                <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                
                                 <p class=" text-sm text-gray-400">Size 5</p>
                                 <strong class=" text-sm">Negotiatable Price</strong>
                                 <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -215,7 +215,7 @@
                             </div>
                             <img src="./assets/imgs/products/product-3.jpg" alt="">
                             <div class="space-y-1 p-3">
-                                <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                
                                 <p class=" text-sm text-gray-400">Size 5</p>
                                 <strong class=" text-sm">Negotiatable Price</strong>
                                 <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -235,7 +235,7 @@
                             <img src="./assets/imgs/products/product-4.jpg" alt="">
 
                             <div class="space-y-1 p-3">
-                                <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                
                                 <p class=" text-sm text-gray-400">Size 5</p>
                                 <strong class=" text-sm">Negotiatable Price</strong>
                                 <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -274,7 +274,7 @@
 
                                 <img src="./assets/imgs/products/product-1.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                    
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -293,7 +293,7 @@
 
                                 <img src="./assets/imgs/products/product-16.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                    
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -312,7 +312,7 @@
 
                                 <img src="./assets/imgs/products/product-7.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                    
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -331,7 +331,7 @@
 
                                 <img src="./assets/imgs/products/product-9.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                    
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -349,7 +349,7 @@
                                 </div>
                                 <img src="./assets/imgs/products/product-2.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                    
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -367,7 +367,7 @@
                                 </div>
                                 <img src="./assets/imgs/products/product-3.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                    
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -387,7 +387,7 @@
                                 <img src="./assets/imgs/products/product-4.jpg" alt="">
 
                                 <div class="space-y-1 p-3">
-                                    <h1 class=" font_sb text-gray-600">Curly Waves Wig </h1>
+                                    
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -397,6 +397,7 @@
 
                     </div>
                     <div class="swiper-pagination"></div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </section>

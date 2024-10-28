@@ -29,7 +29,9 @@
             <div class="total-price">$0</div>
         </div>
         <br>
-        <button type="button" class="btn-primary w-full" id="Checkout-btn">Buy Now</button>
+        <a href="./Checkout.php">
+            <button type="button" class="btn-primary w-full" id="Checkout-btn">Buy Now</button>
+        </a>
         <div class="cart-empty-message" style="display: none;">Your cart is empty, please add a product.</div>
 
         <i class="bx bx-x" id="close-cart"></i>

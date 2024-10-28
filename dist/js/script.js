@@ -89,6 +89,9 @@ var swiper = new Swiper(".mySwiper-2", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
   breakpoints: {
     320: {
       slidesPerView: 1.8,

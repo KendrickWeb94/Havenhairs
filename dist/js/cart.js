@@ -201,3 +201,5 @@ function loadCartItems() {
         cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged);
     }
 }
+
+

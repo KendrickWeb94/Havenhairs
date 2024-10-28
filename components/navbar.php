@@ -69,10 +69,10 @@ $isAdmin = isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'; 
                 <ul class="list-none text-sm ds:hidden lg:flex font_m text-gray-500 items-center justify-center gap-6">
                     <li class="hover:text-primary smooth"><a href="./index.php">Home</a></li>
                     <li class="hover:text-primary smooth"><a href="./Categories.php">Hairs</a></li>
-                    <li class="hover:text-primary smooth"><a href="./About.php">About Us</a></li>
+                    <!-- <li class="hover:text-primary smooth"><a href="./About.php">About Us</a></li> -->
                     <li class="hover:text-primary smooth"><a href="./Contact.php">Contact Us</a></li>
                     <li class="hover:text-primary smooth">
-                        <a href="<?php echo $isAdmin ? './Dashboard.php' : './Admin-signup.php'; ?>">Admin Only</a>
+                        <a href="<?php echo $isAdmin ? './Dashboard.php' : './Admin-login.php'; ?>">Admin Only</a>
                     </li>
                 </ul>
             </div>
