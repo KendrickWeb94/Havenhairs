@@ -143,7 +143,7 @@
         // Logout function
         function logout() {
             // Logic for logging out, e.g., redirecting to a logout PHP page
-            window.location.href = './logout.php'; // Update with your logout URL
+            window.location.href = './Admin-logout.php'; // Update with your logout URL
         }
     </script>
 </body>

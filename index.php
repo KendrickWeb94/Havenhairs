@@ -7,38 +7,23 @@
     <title>Home</title>
     <link rel="stylesheet" href="./dist/scss/Style.css">
     <link rel="stylesheet" href="./dist/tailwind/output.css">
-    <link rel="stylesheet" href="./dist/icons/font-awesome.css">
     <link rel="stylesheet" href="./dist/css/cart.css">
     <script src="./dist/js/cart.js"></script>
     <link rel="stylesheet" href="./dist/icons/boxicons.min.css">
     <link rel="stylesheet" href="./dist/swiper/swiper.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </h2>
 </head>
 
 <body class="h-auto relative font_r">
-<div class="cart">
-        <h2 class="cart-title">
-            Your Cart
-        </h2>
-        <div class="cart-content">
 
-
-        </div>
-        <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price">$0</div>
-        </div>
-        <br>
-        <button type="button" class="btn-primary w-full" id="Checkout-btn">Buy Now</button>
-        <div class="cart-empty-message" style="display: none;">Your cart is empty, please add a product.</div>
-
-        <i class="bx bx-x" id="close-cart"></i>
-    </div>
-    </div>
 
     <?php
-        @include "./components/navbar.php"
-    ?>
+    @include "./components/navbar.php"
+        ?>
 
     <section class=" min-h-[70vh] mt-20 z-lg h-auto flex items-center justify-center  w-full "
         style="background: url(./assets/imgs/hero1.svg); background-position: center;background-repeat: no-repeat;background-size:cover;">
@@ -179,7 +164,7 @@
 
                             <img src="./assets/imgs/products/product-1.jpg" alt="">
                             <div class="space-y-1 p-3">
-                                
+
                                 <p class=" text-sm text-gray-400">Size 5</p>
                                 <strong class=" text-sm">Negotiatable Price</strong>
                                 <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -197,7 +182,7 @@
                             </div>
                             <img src="./assets/imgs/products/product-2.jpg" alt="">
                             <div class="space-y-1 p-3">
-                                
+
                                 <p class=" text-sm text-gray-400">Size 5</p>
                                 <strong class=" text-sm">Negotiatable Price</strong>
                                 <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -215,7 +200,7 @@
                             </div>
                             <img src="./assets/imgs/products/product-3.jpg" alt="">
                             <div class="space-y-1 p-3">
-                                
+
                                 <p class=" text-sm text-gray-400">Size 5</p>
                                 <strong class=" text-sm">Negotiatable Price</strong>
                                 <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -235,7 +220,7 @@
                             <img src="./assets/imgs/products/product-4.jpg" alt="">
 
                             <div class="space-y-1 p-3">
-                                
+
                                 <p class=" text-sm text-gray-400">Size 5</p>
                                 <strong class=" text-sm">Negotiatable Price</strong>
                                 <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -274,7 +259,7 @@
 
                                 <img src="./assets/imgs/products/product-1.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    
+
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -293,7 +278,7 @@
 
                                 <img src="./assets/imgs/products/product-16.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    
+
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -312,7 +297,7 @@
 
                                 <img src="./assets/imgs/products/product-7.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    
+
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -331,7 +316,7 @@
 
                                 <img src="./assets/imgs/products/product-9.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    
+
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -349,7 +334,7 @@
                                 </div>
                                 <img src="./assets/imgs/products/product-2.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    
+
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -367,7 +352,7 @@
                                 </div>
                                 <img src="./assets/imgs/products/product-3.jpg" alt="">
                                 <div class="space-y-1 p-3">
-                                    
+
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -387,7 +372,7 @@
                                 <img src="./assets/imgs/products/product-4.jpg" alt="">
 
                                 <div class="space-y-1 p-3">
-                                    
+
                                     <p class=" text-sm text-gray-400">Size 5</p>
                                     <strong class=" text-sm">Negotiatable Price</strong>
                                     <p class=" text-red-500 text-sm">No cost on each delivery</p>
@@ -396,7 +381,6 @@
                         </div>
 
                     </div>
-                    <div class="swiper-pagination"></div>
                     <div class="swiper-scrollbar"></div>
                 </div>
             </div>

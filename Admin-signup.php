@@ -20,14 +20,15 @@ if (isset($_POST['submit'])) { // Change to match the button name in the form
             $error = "Admin already exists with this email!";
         } else {
             // Hash the password
-            $hashedPassword = password_hash($admin_password, PASSWORD_DEFAULT);
+         
 
             // Insert admin details into the database
-            $insertAdmin = "INSERT INTO admin (admin_name, admin_password, admin_email) VALUES ('$admin_name', '$hashedPassword', '$admin_email')";
+            $insertAdmin = "INSERT INTO admin (admin_name, admin_password, admin_email) VALUES ('$admin_name', '$admin_Password', '$admin_email')";
 
             if ($conn->query($insertAdmin) === TRUE) {
                 $_SESSION['admin_name'] = $admin_name;
                 $_SESSION['admin_email'] = $admin_email;
+                $_SESSION['admin_password'] = $admin_password;
                 header('Location: Dashboard.php'); // Redirect to Dashboard
                 exit();
             } else {

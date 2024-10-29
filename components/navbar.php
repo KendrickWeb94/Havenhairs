@@ -10,6 +10,9 @@ $isAdmin = isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'; 
 <head>
     <link rel="stylesheet" href="../dist/css/cart.css">
     <script src="../dist/js/cart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +28,6 @@ $isAdmin = isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'; 
             <ul class="list-none flex flex-col text-sm font_m text-gray-500 gap-6">
                 <li class="hover:text-primary smooth"><a href="./index.php">Home</a></li>
                 <li class="hover:text-primary smooth"><a href="./Categories.php">Hairs</a></li>
-                <li class="hover:text-primary smooth"><a href="./About.php">About Us</a></li>
                 <li class="hover:text-primary smooth"><a href="./Contact.php">Contact Us</a></li>
                 <li class="hover:text-primary smooth">
                     <a href="<?php echo $isAdmin ? './Dashboard.php' : './Admin-signup.php'; ?>">Admin Only</a>

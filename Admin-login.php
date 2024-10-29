@@ -14,8 +14,8 @@ if (isset($_POST['admin_submit'])) { // Change to match the button name in the f
         $admin = $result->fetch_assoc();
         // Verify password
         if (password_verify($admin_password, $admin['admin_password'])) {
-            $_SESSION['admin_name'] = $admin['admin_name'];
-            $_SESSION['admin_email'] = $admin['admin_email'];
+            $_SESSION['admin_email'] = $admin_email['admin_email'];
+            $_SESSION['admin_password'] = $admin_password['admin_password'];
             header('Location: ./Dashboard.php'); // Redirect to Dashboard
             exit();
         } else {

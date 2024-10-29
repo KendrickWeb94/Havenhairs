@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="./dist/swiper/swiper.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        main {
+        .error {
             width: 100%;
             margin: 0px;
             text-align: center;
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     <?php if (isset($error)): ?>
-        <main><?php echo $error; ?></main>
+        <div class='error'><?php echo $error; ?></div>
     <?php endif; ?>
     <?php @include "./components/back-crumbs.php" ?>
     <section class="w-full h-full items-center justify-center">

@@ -42,11 +42,6 @@ table {
   border-spacing: 0;
 }
 
-input {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
 @font-face {
   font-family: "Poppins";
   src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
@@ -552,4 +547,8 @@ i {
 
 .contact_items {
   border: 0.4px solid #7e22ce;
+}
+
+input:checked {
+  background: #7e22ce;
 }/*# sourceMappingURL=Style.css.map */

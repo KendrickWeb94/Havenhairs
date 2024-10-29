@@ -21,8 +21,6 @@
             Your Cart
         </h2>
         <div class="cart-content">
-
-
         </div>
         <div class="total">
             <div class="total-title">Total</div>
@@ -49,87 +47,50 @@
                 </div>
                 <br>
                 <br>
+                <!-- Length Filter -->
                 <div class="w-full">
                     <h1 class=" text-dark-blue font_sb">Length</h1>
                     <br>
                     <ul class=" list-none space-y-2">
                         <li class="flex items-center gap-3">
-                            <button id="checkbox"
-                                class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                <i class="bx bx-check text-white"></i>
-                            </button>
-                            <p class="text-gray-400 text-sm">Long</p>
+
+                            <input type="checkbox" class="length-filter" value="Long"> Long
                         </li>
                         <li class="flex items-center gap-3">
-                            <button id="checkbox"
-                                class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                <i class="bx bx-check text-white"></i>
-                            </button>
-                            <p class="text-gray-400 text-sm">Short</p>
+                            <input type="checkbox" class=" length-filter" value="Short"> Short
                         </li>
                     </ul>
                 </div>
                 <br>
-
-                <div class="w-[300px] border border-gray-400 h-1"></div>
-                <hr>
-                <br>
+                <!-- Color Filter -->
                 <div class="w-full">
                     <h1 class=" text-dark-blue font_sb">Color</h1>
                     <br>
                     <ul class=" list-none space-y-2">
                         <li class="flex items-center gap-3">
-                            <button id="checkbox"
-                                class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                <i class="bx bx-check text-white"></i>
-                            </button>
-                            <p class="text-gray-400 text-sm">Red</p>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <button id="checkbox"
-                                class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                <i class="bx bx-check text-white"></i>
-                            </button>
-                            <p class="text-gray-400 text-sm">Black</p>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <button id="checkbox"
-                                class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                <i class="bx bx-check text-white"></i>
-                            </button>
-                            <p class="text-gray-400 text-sm">Gold</p>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <button id="checkbox"
-                                class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                <i class="bx bx-check text-white"></i>
-                            </button>
-                            <p class="text-gray-400 text-sm">Brown</p>
+                            <input type="checkbox" class=" color-filter" value="Black"> Black
                         </li>
                     </ul>
                 </div>
                 <br>
-                <div class="w-[300px] border border-gray-400 h-1"></div>
-                <hr>
-                <br>
-                <div class="w-full">
+                <!-- Price Filter -->
+                <div class="w-[300px]">
                     <h1 class=" text-dark-blue font_sb">Price</h1>
                     <br>
                     <ul class=" list-none space-y-4">
                         <li class="flex items-center gap-3">
-                            <input type="number" name="min" placeholder="Min" id="min"
+                            <input type="number" placeholder="Min" id="min-price"
                                 class="w-full text-sm outline-none border-b border-gray-400/25 py-1">
                         </li>
                         <li class="flex items-center gap-3">
-                            <input type="number" name="max" placeholder="Max" id="max"
+                            <input type="number" placeholder="Max" id="max-price"
                                 class="w-full text-sm outline-none border-b border-gray-400/25 py-1">
-
-
                         </li>
                     </ul>
+                    <button onclick="applyFilters()" class="btn-primary mt-4">Apply Filters</button>
                 </div>
-            </div>
         </div>
+    </div>
     </div>
     <?php
     @include "./components/navbar.php"
@@ -154,94 +115,52 @@
     <section class="min-h-screen w-full mx-auto py-24 container_custom">
         <div class="w-full flex justify-between gap-6 md:gap-16 md:flex-row ds:flex-col">
             <div class="filter max-w-[280px]">
-                <h1 id="open-filter" class="cursor-pointer font_m flex items-center gap-3 text-2xl text-primary ">Filter
-
-                    <div class="ds:block md:hidden">
-                        <i class="bx bx-filter-alt"></i>
-                    </div>
-
+                <h1 id="open-filter" class="cursor-pointer font_m flex items-center gap-3 text-2xl text-primary">Filter
+                    <div class="ds:block md:hidden"><i class="bx bx-filter-alt"></i></div>
                 </h1>
-                <br>
-                <br>
-                <div class=" ds:hidden md:block">
+                <br><br>
+                <div class="ds:hidden md:block">
+                    <!-- Length Filter -->
                     <div class="w-full">
                         <h1 class=" text-dark-blue font_sb">Length</h1>
                         <br>
                         <ul class=" list-none space-y-2">
                             <li class="flex items-center gap-3">
-                                <button id="checkbox"
-                                    class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                    <i class="bx bx-check text-white"></i>
-                                </button>
-                                <p class="text-gray-400 text-sm">Long</p>
+
+                                <input type="checkbox" class="length-filter" value="Long"> Long
                             </li>
                             <li class="flex items-center gap-3">
-                                <button id="checkbox"
-                                    class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                    <i class="bx bx-check text-white"></i>
-                                </button>
-                                <p class="text-gray-400 text-sm">Short</p>
+                                <input type="checkbox" class=" length-filter" value="Short"> Short
                             </li>
                         </ul>
                     </div>
                     <br>
-
-                    <div class="w-[300px] border border-gray-400 h-1"></div>
-                    <hr>
-                    <br>
+                    <!-- Color Filter -->
                     <div class="w-full">
                         <h1 class=" text-dark-blue font_sb">Color</h1>
                         <br>
                         <ul class=" list-none space-y-2">
                             <li class="flex items-center gap-3">
-                                <button id="checkbox"
-                                    class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                    <i class="bx bx-check text-white"></i>
-                                </button>
-                                <p class="text-gray-400 text-sm">Red</p>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <button id="checkbox"
-                                    class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                    <i class="bx bx-check text-white"></i>
-                                </button>
-                                <p class="text-gray-400 text-sm">Black</p>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <button id="checkbox"
-                                    class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                    <i class="bx bx-check text-white"></i>
-                                </button>
-                                <p class="text-gray-400 text-sm">Gold</p>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <button id="checkbox"
-                                    class="w-4 h-4 checkbox checkbox-btn rounded-sm border bg-transparent flex items-center justify-center border-gray-400/45">
-                                    <i class="bx bx-check text-white"></i>
-                                </button>
-                                <p class="text-gray-400 text-sm">Brown</p>
+                                <input type="checkbox" class=" color-filter" value="Black"> Black
                             </li>
                         </ul>
                     </div>
                     <br>
-                    <div class="w-[300px] border border-gray-400 h-1"></div>
-                    <hr>
-                    <br>
-                    <div class="w-full">
+                    <!-- Price Filter -->
+                    <div class="w-[300px]">
                         <h1 class=" text-dark-blue font_sb">Price</h1>
                         <br>
                         <ul class=" list-none space-y-4">
                             <li class="flex items-center gap-3">
-                                <input type="number" name="min" placeholder="Min" id="min"
+                                <input type="number" placeholder="Min" id="min-price"
                                     class="w-full text-sm outline-none border-b border-gray-400/25 py-1">
                             </li>
                             <li class="flex items-center gap-3">
-                                <input type="number" name="max" placeholder="Max" id="max"
+                                <input type="number" placeholder="Max" id="max-price"
                                     class="w-full text-sm outline-none border-b border-gray-400/25 py-1">
-
-
                             </li>
                         </ul>
+                        <button onclick="applyFilters()" class="btn-primary mt-4">Apply Filters</button>
                     </div>
                 </div>
             </div>
@@ -249,141 +168,253 @@
                 <div class="shop-content">
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-1.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Curly Lace Wig</h2>
-                        <span class="price">GH₵350</span>
+                        <h2 class="product-title text-sm">Curly Lace Wig</h2>
+                        <span class="price text-sm">GH₵350</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-2.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Deep Wave Hair</h2>
-                        <span class="price">GH₵420</span>
+                        <h2 class="product-title text-sm">Deep Wave Hair</h2>
+                        <span class="price text-sm">GH₵420</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-3.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Body Wave Wig</h2>
-                        <span class="price">GH₵275</span>
+                        <h2 class="product-title text-sm">Body Wave Wig</h2>
+                        <span class="price text-sm">GH₵275</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-4.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Straight Human Hair</h2>
-                        <span class="price">GH₵390</span>
+                        <h2 class="product-title text-sm">Straight Human Hair</h2>
+                        <span class="price text-sm">GH₵390</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-5.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Afro Kinky Wig</h2>
-                        <span class="price">GH₵450</span>
+                        <h2 class="product-title text-sm">Afro Kinky Wig</h2>
+                        <span class="price text-sm">GH₵450</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
-                        <img src="./assets/imgs/products/product-21.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Water Wave Hair</h2>
-                        <span class="price">GH₵380</span>
+                        <img src="./assets/imgs/products/product-6.jpg" alt="" class="product-img">
+                        <h2 class="product-title text-sm">Water Wave Hair</h2>
+                        <span class="price text-sm">GH₵380</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-7.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Brazilian Bob Wig</h2>
-                        <span class="price">GH₵310</span>
+                        <h2 class="product-title text-sm">Brazilian Bob Wig</h2>
+                        <span class="price text-sm">GH₵310</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-8.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Frontal Lace Wig</h2>
-                        <span class="price">GH₵500</span>
+                        <h2 class="product-title text-sm">Frontal Lace Wig</h2>
+                        <span class="price text-sm">GH₵500</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-9.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Peruvian Hair Wig</h2>
-                        <span class="price">GH₵425</span>
+                        <h2 class="product-title text-sm">Peruvian Hair Wig</h2>
+                        <span class="price text-sm">GH₵425</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-10.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Silky Straight Wig</h2>
-                        <span class="price">GH₵290</span>
+                        <h2 class="product-title text-sm">Silky Straight Wig</h2>
+                        <span class="price text-sm">GH₵290</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-11.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Kinky Curly Hair</h2>
-                        <span class="price">GH₵370</span>
+                        <h2 class="product-title text-sm">Kinky Curly Wig</h2>
+                        <span class="price text-sm">GH₵370</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-12.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Lace Front Wig</h2>
-                        <span class="price">GH₵480</span>
+                        <h2 class="product-title text-sm">Lace Front Wig</h2>
+                        <span class="price text-sm">GH₵480</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-13.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Loose Wave Wig</h2>
-                        <span class="price">GH₵320</span>
+                        <h2 class="product-title text-sm">Loose Wave Wig</h2>
+                        <span class="price text-sm">GH₵320</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-14.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Natural Curly Wig</h2>
-                        <span class="price">GH₵405</span>
+                        <h2 class="product-title text-sm">Natural Curly Wig</h2>
+                        <span class="price text-sm">GH₵405</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-15.jpg" alt="" class="product-img">
-                        <h2 class="product-title">360 Lace Wig</h2>
-                        <span class="price">GH₵510</span>
+                        <h2 class="product-title text-sm">Wavy Bob Wig</h2>
+                        <span class="price text-sm">GH₵275</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-16.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Long Body Wave</h2>
-                        <span class="price">GH₵450</span>
+                        <h2 class="product-title text-sm">Vintage Wave Wig</h2>
+                        <span class="price text-sm">GH₵415</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-17.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Short Bob Wig</h2>
-                        <span class="price">GH₵280</span>
+                        <h2 class="product-title text-sm">Short Pixie Cut Wig</h2>
+                        <span class="price text-sm">GH₵250</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-18.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Wet & Wavy Hair</h2>
-                        <span class="price">GH₵400</span>
+                        <h2 class="product-title text-sm">Layered Cut Wig</h2>
+                        <span class="price text-sm">GH₵295</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-19.jpg" alt="" class="product-img">
-                        <h2 class="product-title">Pixie Cut Wig</h2>
-                        <span class="price">GH₵325</span>
+                        <h2 class="product-title text-sm">Classic Bob Wig</h2>
+                        <span class="price text-sm">GH₵280</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Short</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
                     <div class="product-box">
                         <img src="./assets/imgs/products/product-20.jpg" alt="" class="product-img">
-                        <h2 class="product-title">U-Part Wig</h2>
-                        <span class="price">GH₵390</span>
+                        <h2 class="product-title text-sm">Classic Wave Wig</h2>
+                        <span class="price text-sm">GH₵330</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
+                        <i class="bx bx-shopping-bag add-to-cart"></i>
+                    </div>
+
+                    <div class="product-box">
+                        <img src="./assets/imgs/products/product-21.jpg" alt="" class="product-img">
+                        <h2 class="product-title text-sm">Stylish Lace Wig</h2>
+                        <span class="price text-sm">GH₵460</span>
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="w-4 h-4 bg-black rounded-full mr-1"></div>
+                            <span>Black</span>
+                        </div>
+                        <span class="text-xs">Length: Long</span>
                         <i class="bx bx-shopping-bag add-to-cart"></i>
                     </div>
 
@@ -452,8 +483,7 @@
 
     <!-- npx tailwindcss -i /dist/tailwind/input.css -o /dist/tailwind/output.css --watch -->
     <script>
-        let checkboxBtn = document.querySelectorAll(".checkbox-btn");
-        let checkbox = document.querySelectorAll(".checkbox");
+     
         let mobileFilter = document.getElementById("mobile-filter");
         let openFilter = document.getElementById("open-filter");
         let closeFilter = document.getElementById("close-filter");
@@ -471,15 +501,7 @@
         });
 
 
-        checkboxBtn.addEventListener("click", () => {
-            if ((checkbox.classList.contains = "bg-transparent")) {
-                checkbox.classList.remove("bg-transparent");
-                checkbox.classList.add("bg-primary");
-            } else {
-                checkbox.classList.add("bg-transparent");
-                checkbox.classList.remove("bg-primary");
-            }
-        });
+     
 
         let navbar = document.getElementById("navbar");
         let responsivenav = document.getElementById("responsive_nav");
@@ -500,10 +522,32 @@
     </script>
     <script src="./dist/js/Jquery.js"></script>
     <script src="./dist/js/cart.js"></script>
-    <script src="./dist/js/swiper.min.js"></script>
-    <script src="./dist/js/swiper-bundle.min.js.map"></script>
     <script src="./dist/js/general.js"></script>
     <script src="./dist/js/boxicons.js"></script>
+    <script>
+        function applyFilters() {
+            const selectedLengths = Array.from(document.querySelectorAll('.length-filter:checked')).map(el => el.value);
+            const selectedColors = Array.from(document.querySelectorAll('.color-filter:checked')).map(el => el.value);
+            const minPrice = parseFloat(document.getElementById('min-price').value) || 0;
+            const maxPrice = parseFloat(document.getElementById('max-price').value) || Infinity;
+
+            document.querySelectorAll('.product-box').forEach(product => {
+                const productLength = product.getAttribute('data-length');
+                const productColor = product.getAttribute('data-color');
+                const productPrice = parseFloat(product.getAttribute('data-price'));
+
+                const lengthMatch = selectedLengths.length === 0 || selectedLengths.includes(productLength);
+                const colorMatch = selectedColors.length === 0 || selectedColors.includes(productColor);
+                const priceMatch = productPrice >= minPrice && productPrice <= maxPrice;
+
+                if (lengthMatch && colorMatch && priceMatch) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
